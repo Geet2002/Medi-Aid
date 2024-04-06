@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.a:hover{
+    cursor: pointer;
+}
+
+.parrent{
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    /* background-color: white; */
+    /* overflow: hidden; */
+    background: rgba(0, 0, 0, 0.05) url('./image/pani2.png');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.nav{
+    height: 14vh;
+    background-color:white;
+    display: flex;
+    animation: slidingNav 0.8s;
+    position: fixed;
+}
+
+@keyframes slidingNav{
+    from{
+        transform: translateY(-450px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.nav a{
+    text-decoration: none;
+    color: green;
+}
+
+.left{
+    width: 9vw; 
+    height: 100%;
+    z-index: 99;
+    padding-left: 20px;
+}
+
+.logo{
+    height: 100%;
+    padding-top: 10px;
+}
+
+.logo img{
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.right{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 91vw;
+    padding-top: 4px;
+    padding-right: 40px;
+}
+
+.signIn{
+    padding-top: 20px;
+    padding-right: 25px;
+    font-size: 20px;
+    transition: 0.8s ease;
+    display: flex\;
+}
+
+.signIn a:hover{
+    color: rgb(69, 210, 69);
+    transform: translateX(10px);
+}
+
+.signUp{
+    padding-top: 20px;
+    padding-right: 25px;
+    font-size: 18px;
+    transition: 0.8s ease;
+    /* background-color: green; */
+    padding-left: 10px;
+    
+}
+
+.signUp a{
+    color: white;
+    background-color: green;
+    padding-top: 3px;
+    padding: 6px;
+    border-radius: 5px;
+    font-weight: lighter;
+    padding-bottom: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.signUp a:hover{
+    transform: scale(1.08);
+    background-color: white;
+    color: green;
+}
+
+.hero{
+    height: 88vh;
+    /* background-color: white; */
+    display: flex;
+}
+
+.lBox{
+    padding-left: 15px;
+    padding-top: 20px;
+    height: 100%;
+    /* background-color: white; */
+    width: 15vw;
+    padding-left: 0%;
+    padding-top: 100px;
+
+}
+
+.container{
+    height: 80vh;
+    width: 13vw;
+    background-color: rgb(247, 247, 247);
+    animation: slidingLeftBox 0.8s;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 40px;
+    align-items: center;
+    padding-right: 4px;
+    transition: 0.2s ease;
+    position: fixed;
+}
+
+.container:hover{
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.313);
+}
+
+.container a{
+    text-decoration: none;
+    color: green;
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+
+@keyframes slidingLeftBox{
+    from{
+        transform: translateX(-450px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.container a:hover{
+    color: rgb(69, 210, 69);
+    transform: translateX(10px);
+}
+
+.rBox{
+    height: 100%;
+    width: 85vw;
+    /* background-color: white; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 25px;
+}
+
+.contentWrapper{
+    height: 80vh;
+    width: 83vw;
+    /* border-radius: 20px; */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.contents{
+    height: 100%;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.firstsection{
+    height: 80vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 80%;
+    margin: auto;
+    height: 80%;
+}
+
+.firsthalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.maintext-big{
+    padding-top: 40px;
+    font-size: 41px;
+    color: rgb(22, 205, 22);
+    /* text-align: center; */
+}
+
+.maintext-small{
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.secondhalf{
+    width: 30%;
+    padding-top: 100px;
+}
+
+.secondhalf img {
+    padding-top: 60px;
+    display: flex;
+    width: 100%;
+    /* border-radius: 400px; */
+    /* border: 4px solid white; */
+    display: block;
+    margin: auto;
+}
+
+
+.thumbnail img{
+    width: 225px;
+    /* border: 2px solid gray; */
+    /* border-radius: 10px; */
+    margin-top: 40px;
+}
+
+.section{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 120px;
+}
+
+.section-Left{
+    flex-direction: row-reverse;
+}
+
+.text-big{
+    font-size: 41px;
+    color: green;
+    /* text-align: center; */
+    padding-top: 80px;
+}
+
+.text-small{
+    padding-top: 15px;
+}
+
+.paras{
+    padding: 0 65px;
+}

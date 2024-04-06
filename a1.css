@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.a:hover{
+    cursor: pointer;
+}
+
+.parrent{
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    /* background-color: white; */
+    overflow: hidden;
+    /* background: rgba(0, 0, 0, 0.511) url('./image/2.png'); */
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.nav{
+    height: 14vh;
+    background-color:white;
+    display: flex;
+    animation: slidingNav 0.8s;
+    position: fixed;
+}
+
+@keyframes slidingNav{
+    from{
+        transform: translateY(-450px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.nav a{
+    text-decoration: none;
+    color: green;
+}
+
+.left{
+    width: 9vw; 
+    height: 100%;
+    z-index: 99;
+    padding-left: 20px;
+}
+
+.logo{
+    height: 100%;
+    padding-top: 10px;
+}
+
+.logo img{
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.right{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 91vw;
+    padding-top: 4px;
+    padding-right: 40px;
+}
+
+.signIn{
+    padding-top: 20px;
+    padding-right: 25px;
+    font-size: 20px;
+    transition: 0.8s ease;
+    display: flex\;
+}
+
+.signIn a:hover{
+    color: rgb(69, 210, 69);
+    transform: translateX(10px);
+}
+
+.signUp{
+    padding-top: 20px;
+    padding-right: 25px;
+    font-size: 18px;
+    transition: 0.8s ease;
+    /* background-color: green; */
+    padding-left: 10px;
+    
+}
+
+.signUp a{
+    color: white;
+    background-color: green;
+    padding-top: 3px;
+    padding: 6px;
+    border-radius: 5px;
+    font-weight: lighter;
+    padding-bottom: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.signUp a:hover{
+    transform: scale(1.08);
+    background-color: white;
+    color: green;
+}
+
+.hero{
+    height: 95vh;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: row;
+}
+
+.lBox{
+    padding-left: 15px;
+    padding-top: 20px;
+    height: 100%;
+    /* background-color: white; */
+    width: 15vw;
+    padding-left: 0%;
+    padding-top: 100px;
+
+}
+
+.container{
+    height: 80vh;
+    width: 13vw;
+    background-color: rgb(247, 247, 247);
+    animation: slidingLeftBox 0.8s;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 40px;
+    align-items: center;
+    padding-right: 4px;
+    transition: 0.2s ease;
+    position: fixed;
+}
+
+.container:hover{
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.324);
+}
+
+.container a{
+    text-decoration: none;
+    color: green;
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+
+@keyframes slidingLeftBox{
+    from{
+        transform: translateX(-450px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.container a:hover{
+    color: rgb(69, 210, 69);
+    transform: translateX(10px);
+}
+
+.rBox{
+    height: 100%;
+    width: 85vw;
+    /* background-color: white; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+    /* border-radius: 25px; */
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.wrapper{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+    /* overflow: hidden; */
+    /* background-color: aliceblue; */
+    border-radius: 15px;
+    padding-right: 40px;
+    padding-top: 5px;
+}
+
+.l{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(207, 227, 245);
+    border-right: 2px solid rgb(113, 113, 113);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    gap: 20px;
+}
+
+.appoinment{
+    padding-top: 20px;
+    color: rgb(25, 188, 25);
+    font-size: 25px;
+}
+
+.box1{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.24);
+    height: 44px;
+    border-radius: 25px;
+    border: 2px solid rgba(193, 191, 191, 0.674);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    transition: 0.2s ease;
+}
+
+/* .box1:hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.447);
+} */
+
+.box2{
+    width: 80%;
+    background-color: white;
+    height: 44px;
+    border-radius: 25px;
+    border: 2px solid rgba(193, 191, 191, 0.674);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    transition: 0.2s ease;
+}
+
+.box2:hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.447);
+}
+
+.box3{
+    width: 80%;
+    background-color: white;
+    height: 44px;
+    border-radius: 25px;
+    border: 2px solid rgba(193, 191, 191, 0.674);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    transition: 0.2s ease;
+}
+
+.box3:hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.447);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.r{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(207, 227, 245);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    height: 80%;
+    width: 70%;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.nametext{
+    padding: 20px;
+}
+
+.h{
+    height: 180px;
+    width: 100%px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h img{
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid rgb(155, 155, 155);
+}
+
+.slotnotext{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 20px;
+    color: rgb(198, 78, 118);
+}
+
+.currentslot{
+    height: 30px;
+    width: 100%;
+    font-size: 20px;
+    padding-top: 20px;
+    color: rgb(80, 166, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.estdtimetext{
+    height: 30px;
+    width: 100%;
+    font-size: 17px;
+    padding-top: 20px;
+    color: rgb(66, 66, 66);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box4{
+    width: 30%;
+    background-color: aquamarine;
+    height: 44px;
+    border-radius: 25px;
+    border: 2px solid rgba(193, 191, 191, 0.674);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
+.box5{
+    width: 30%;
+    background-color: rgb(248, 101, 64);
+    height: 44px;
+    border-radius: 25px;
+    border: 2px solid rgba(193, 191, 191, 0.674);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
